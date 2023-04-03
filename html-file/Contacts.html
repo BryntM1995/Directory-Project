@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Style-file/Style.css">
+    <link rel="icon" href="../resources/contactImage.jpg" type="image">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/95cde95544.js" crossorigin="anonymous"></script>
+    <title>Contacts</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="News.html"><i class="fa-solid fa-newspaper"></i></a>
+        <a href="Contacts.html" ><i class="fa-solid fa-address-book"></i></a>
+        <a id="addbtn" href="" onclick="addContactPopUp('AddContact.html')"><i class="fa-solid fa-user-plus"></i></a>
+        <input id="filterId" type="text" placeholder=" Search by name..." onkeyup="toFindAUser()">
+    </div>
+   
+    <section class="contactFields">
+       <div>
+            <table id="contactTable">
+            <thead>
+              <tr  class="columnNames">
+                <th><i class="fa-regular fa-image"></i></th>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Status</th>
+                <th>PhoneNumber</th>
+                <th>Date of Birth</th>
+                <th>Remove Option</th>
+                <th>Activate Edit Mode</th>
+                <th>View Profile's Info</th>
+              </tr>
+            </thead>
+            <tbody id="contactList"></tbody>
+            </table>
+       </div>
+    </section>
+    <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close"><i class="fa-sharp fa-regular fa-rectangle-xmark"></i></span>
+    <div>
+      <h1>Update a Contact</h1>
+   </div>
+    <div class="ContactFields">
+      <p>Add Profile picture</p>
+      <img id="profilepic" src="../resources/nonAPicture.png" alt="Upload a picture">
+      <input id="inputPic" type="file" onchange="previewFile()"></input>
+    </div>
+    <div class="ContactFields">
+      <p>Name</p>
+      <input id="contactName" type="text" placeholder="example: Peter" required>
+    </div>
+    <div class="ContactFields">
+      <p>Last Name</p>
+      <input id="contactLastName" type="text" placeholder="example: Ortega">
+    </div>
+    <div class="ContactFields">
+      <p>Description</p>
+      <input id="description" type="text" placeholder="example: Available">
+    </div>
+    <div class="ContactFields">
+      <p>Telefono</p>
+      <input id="contactPhoneNumber" type="number" maxlength="10" placeholder="example: +18095674532"required>
+    </div>
+    <div class="ContactFields">
+      <p>Birth Date</p>
+      <input id="dateValue" type="date">
+    </div>
+    <div>
+      <button id="submitBtn" class="submitInfo">Submit info</button>
+   </div>
+  </div>
+    </div>
+    <div id="myModalProfile" class="modalUsers">
+
+  
+   <div class="modalUser-content">
+    <span class="newClose"><i class="fa-solid fa-rectangle-xmark"></i></span>
+    <H1 id="fullName"></H1>
+    <img id="picModal" src="" alt="No picture Available"><br>
+    <b id="currentDescription"></b><br>
+    <b id="bDate"></b><br>
+    <b id="telePhoneNumber"></b>
+  </div>
+
+</div>
+    <script src="../Code-file/Script.js"></script>
+    <script src="../Code-file/ContactsScript.js"></script>
+</body>
+</html>
+
+

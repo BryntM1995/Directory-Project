@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Style-file/Style.css">
+    <link rel="icon" href="../resources/contactImage.jpg" type="image">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/95cde95544.js" crossorigin="anonymous"></script>
+    <title>Add a new Contact</title>
+</head>
+<body>
+    <div id="contactChart">
+        <div>
+            <h1>Add a Contact</h1>
+        </div>
+        <div class="ContactFields">
+            <p>Add Profile</p>
+            <img id="profilepic" src="../resources/nonAPicture.png" alt="Upload a picture">
+            <input id="inputPic" type="file" onchange="previewFile()"></input>
+        </div>
+        <div class="ContactFields">
+            <p>Name</p>
+            <input id="contactName" type="text" placeholder="example: Peter" required>
+        </div>
+        <div class="ContactFields">
+            <p>Last Name</p>
+            <input id="contactLastName" type="text" placeholder="example: Ortega" min="1" required>
+        </div>
+        <div class="ContactFields">
+            <p>Description</p>
+            <input id="description" type="text" placeholder=" Example: Available." min="1" required>
+        </div>
+        <div class="ContactFields">
+            <p>Telefono</p>
+            <input id="contactPhoneNumber" type="number" maxlength="20" placeholder=" Example: +18094234345.">
+        </div>
+        <div class="ContactFields">
+            <p>Birth Date</p>
+            <input id="dateValue" type="date" required>
+        </div>
+        <div>
+            <button id="submitBtn" class="submitInfo"><i class="fa-solid fa-floppy-disk"></i></button>
+        </div>
+    </div>
+    <script src="../Code-file/AddContactScript.js"></script>
+    <script src="../Code-file/Script.js"></script>
+</body>
+</html>

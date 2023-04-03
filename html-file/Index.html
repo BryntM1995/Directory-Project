@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Style-file/Style.css">
+    <link rel="icon" href="../resources/nonAPicture.png" type="image">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/95cde95544.js" crossorigin="anonymous"></script>
+    <title>Directory</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="News.html"><i class="fa-solid fa-newspaper"></i></a>
+        <a href="Contacts.html" ><i class="fa-solid fa-address-book"></i></a>
+        <a id="addbtn" href="" onclick="addContactPopUp('AddContact.html')"><i class="fa-solid fa-user-plus"></i></a>
+    </div>
+    <section>
+        <div class="profileContainer">
+            <div id="ownPicture">
+                <h1 class="profileTitles">Your Profile</h1>
+            </div>
+            <div> 
+                <img id="myPic" src="../resources/nonAPicture.png" alt="Upload a picture">
+                <input type="file"></input>
+            </div>
+            <div>
+                <p>Birth Date: <input id="contactDate" type="date" min="1" required>
+            </div>
+            <div>
+                <p>My Telephone number: <input type="tel" maxlength="10" required>
+            </div>
+            <div>
+                <p> My celphone number: <input type="tel" maxlength="10"required >
+            </div>
+            <div>
+                <button class="submitInfo">Submit info</button>
+            </div>
+        </div>
+        <div class="TaskContainer">
+            <div>
+                <h1 class="profileTitles" >Task Todo</h1>
+            </div>
+            <div>
+                <p>Task Date: <input type="date" min="1" required>
+            </div>
+            <div>
+                <p>Task Name: <input type="text" maxlength="10" required>
+            </div>
+            <div>
+                <button class="submitInfo">Submit info</button>
+            </div>
+            <div id="tasks">
+                
+            </div>
+            
+        </div>
+    </section>
+    <script src="../Code-file/Script.js"></script>    
+</body>
+</html>

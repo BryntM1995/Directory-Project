@@ -1,0 +1,302 @@
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    width: 742px;
+    border: groove black;
+    border-radius: 11px;
+    text-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 10px black;
+    z-index: 100;
+    margin: -8px;
+    top: 6px;
+}
+  
+.topnav a, .topnav input {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.5s;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    width: 35px;
+    height: 35px;
+    z-index: 100;
+}
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+body{
+    background: #1FA2FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffffff;
+}
+#contactChart{
+    background-color: #333;
+    border: groove black;
+    border-radius: 16px;
+    position: fixed;
+    left: 225px;
+    padding: 16px;
+    margin: auto;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px black;
+    overflow: auto;
+    height: 545px;
+    width: 406px;
+    display: inline-block;
+    opacity: .9;
+    top: 29px
+}
+div input{
+    box-shadow: 10px 10px 10px black;
+    border-radius: 6px;
+}
+.submitInfo{
+    padding: 15px;
+    margin-top: 12px;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 6px;
+    background-color: darkorange;
+    transition: .3s;
+}
+.submitInfo:hover{
+    background-color: black;
+    color: white;
+}
+#profilepic{
+    position: relative;
+    box-sizing: border-box;
+    height: 100px;
+    border-radius: 54px;
+    border: ridge  darkslategray;
+}
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.profileContainer{
+    background: #333;
+    border-radius: 20px;
+    text-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 10px black;
+    margin: 17px;
+    padding: 18px;
+    border: groove;
+    opacity: .75;
+    transition: .3s;
+    width: 400px;
+    position: relative;
+    top: 52px;
+}
+.profileContainer:hover{
+    opacity: 1;
+}
+
+#myPic{
+    border-radius: 10px;
+    border: solid black;
+    box-shadow: 10px 10px 10px black;
+    height: 70px;
+    width: 70px;
+}
+.profileTitles{
+    border: solid black;
+    border-radius: 10px;
+    background-color: #ddd;
+    transition: 0.2s;
+    color: black;
+    padding: 6px;
+}
+.TaskContainer{
+    background: #333;
+    box-sizing: border-box;
+    border-radius: 20px;
+    text-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 10px black;
+    margin: 17px;
+    padding: 18px;
+    border: groove;
+    opacity: .75;
+    transition: .3s;
+    position: relative;
+    width: 737px;
+    left: 454px;
+    bottom: 370px;
+    height: 405px;
+}
+.TaskContainer:hover{
+    opacity: 1;
+}
+
+.contactFields, .contactFields{
+    background-color: #333;
+    position: relative;
+    border: solid black;
+    border-radius: 10px;
+    padding: 10px;
+    text-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 10px black;
+    top: 75px;
+}
+.userPic{
+    border: 10px black;
+    width: 56px;
+    height: 56px;
+    padding: 4px;
+    border-radius: 55px;
+    box-shadow: 10px 10px 10px black;
+    margin: 1px;
+    box-sizing: border-box;
+}
+
+.displayedDescription,.profileInfoDisplayed,.displayedEditBtn,.displayedName,.displayedLastName,.displayedPhoneNumber,.displayedDateOfBirth,.displayedDeleteBtn{
+    text-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 26px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 5px;
+    width: 160px;
+    height: 50px;
+    transition: .3s;
+}
+
+.displayedDescription:hover,.profileInfoDisplayed:hover,.displayedEditBtn:hover,.displayedId:hover,.displayedName:hover,.displayedLastName:hover,.displayedPhoneNumber:hover,.displayedDateOfBirth:hover,.displayedDeleteBtn:hover{
+   background-color: orange;
+   color: black;
+}
+.columnNames{
+    position: relative;
+    background-color: #ffffff;
+    text-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 10px black;
+    color: black;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content/Box */
+.modal-content {
+    background: #1FA2FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: black;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 54px;
+    box-shadow: 10px 10px 10px black;
+    width: 33%; /* Could be more or less, depending on screen size */
+    z-index: 120;
+}
+  
+  /* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.userPic , .nonPic{
+    transition: 0.5s;
+}
+.userPic:hover , .nonPic:hover{
+    width: 200px;
+    height: 200px;
+}
+.displayedSaveBtn{
+    color: black;
+    background-color: darkgreen;
+}
+
+.modalUsers {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modalUser-content{
+    background: #1FA2FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: black;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 54px;
+    box-shadow: 10px 10px 10px black;
+    text-shadow: 10px 10px 10px black;
+    width: 33%; /* Could be more or less, depending on screen size */
+    height: 60%;
+    font-size: x-large;
+}
+.newClose {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.newClose:hover,
+.newClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#picModal{
+    width: auto;
+    height: 30%;
+    border: 10px ridge darkgray;
+    border-radius: 62px;
+}
+#filterId{
+    color: black !important;
+    transition: 0.3s;
+}
+#filterId:focus{
+    background-color: darkorange;
+}
+
+.nonPic{
+    border: 10px black;
+    width: 56px;
+    height: 56px;
+    padding: 4px;
+    border-radius: 55px;
+    box-shadow: 10px 10px 10px black;
+    margin: 1px;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: capitalize;
+}
